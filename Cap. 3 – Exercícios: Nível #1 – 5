@@ -1,0 +1,59 @@
+/*
+- Utilizando a solução do exercício anterior:
+    1. Em package-level scope, utilizando a palavra-chave var, crie uma variável com o identificador "y". O tipo desta variável deve ser o tipo subjacente do tipo que você criou no exercício anterior.
+    2. Na função main:
+        1. Isto já deve estar feito:
+            1. Demonstre o valor da variável "x"
+            2. Demonstre o tipo da variável "x"
+            3. Atribua 42 à variável "x" utilizando o operador "="
+            4. Demonstre o valor da variável "x"
+        2. Agora faça tambem:
+            1. Utilize conversão para transformar o tipo do valor da variável "x" em seu tipo subjacente e, utilizando o operador "=", atribua o valor de "x" a "y"
+            2. Demonstre o valor de "y"
+            3. Demonstre o tipo de "y"
+*/
+
+package main
+
+import (
+	"fmt"
+)
+
+//Criando um tipo "int" com noem hotdog
+type hotdog int
+
+//Criando uma variável para o tipo acima com identificado "x"
+var x hotdog
+
+//Criando uma variável y
+var y int
+
+func main() {
+
+	//Demonstrando o valor da variável "x"
+	fmt.Printf("\nO valor da variável X é: %v \n", x)
+
+	//Demonstrando o tipo da variável "x"
+	fmt.Printf("\nO tipo da variável X é: %T \n", x)
+
+	//Atribuindo o valor 42 a variável "x" utilizando o operador "="
+	x = 42
+
+	//Demonstrando novo valor da variável "x"
+	fmt.Printf("\nO novo valor da variável x é: %v \n", x)
+
+	//Demonstrando tipo da variável "x"
+	fmt.Printf("\nO tipo da variável X é: %T \n", x)
+
+	//Demonstrando o valor de "y"
+	fmt.Printf("\nO valor da variável Y é: %v \n", y)
+
+	//atribuindo o valor x a y
+	y = int(x)
+
+	//Demonstrando o novo valor de "y"
+	fmt.Printf("\nO valor da variável Y é: %v \n", y)
+
+	//Demostrando tipo de "y"
+	fmt.Printf("\nO tipo da variável Y é %T \n", y)
+}
