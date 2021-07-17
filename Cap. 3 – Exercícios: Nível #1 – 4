@@ -1,0 +1,38 @@
+/*
+- Crie um tipo. O tipo subjacente deve ser int.
+- Crie uma variável para este tipo, com o identificador "x", utilizando a palavra-chave var.
+- Na função main:
+    1. Demonstre o valor da variável "x"
+    2. Demonstre o tipo da variável "x"
+    3. Atribua 42 à variável "x" utilizando o operador "="
+    4. Demonstre o valor da variável "x"
+- Para os aventureiros: https://golang.org/ref/spec#Types
+- Agora já somos quase ninjas nível 1!
+*/
+
+package main
+
+import (
+	"fmt"
+)
+
+//Criando um tipo "int"
+type hotdog int
+
+//Criando uma variavel para o tipo acima com identificado "x"
+var x hotdog
+
+func main() {
+
+	//Demonstrando o valor da variável "x"
+	fmt.Printf("\nO valor da variável X é: %v \n", x)
+
+	//Demonstrando o tipo da variável "x"
+	fmt.Printf("\nO tipo da variável X é: %T \n", x)
+
+	//Atribuindo o valor 42 a variável "x" utilizando o operador "="
+	x = 42
+
+	//Demonstrando novo valor da variável "x"
+	fmt.Printf("\nO novo valor da variável x é: %v", x)
+}
