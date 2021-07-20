@@ -1,0 +1,14 @@
+/*
+- Escreva um programa que mostre um número em decimal, binário, e hexadecimal.
+*/
+
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	x := 100
+	fmt.Printf("O numero x em decimal é:\n%d\n\nEm binário é:\n%b\n\nEm hexadecimal é: \n%#x", x, x, x)
+}
