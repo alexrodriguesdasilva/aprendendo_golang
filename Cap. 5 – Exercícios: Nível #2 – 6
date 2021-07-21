@@ -1,0 +1,25 @@
+/*
+- Utilizando iota, crie 4 constantes cujos valores sejam os próximos 4 anos.
+- Demonstre estes valore
+*/
+
+package main
+
+import (
+	"fmt"
+)
+
+const (
+	_ = 1990 + iota
+	b
+	c
+	d
+	e
+)
+
+func main() {
+	fmt.Printf("O primeiro ano é %v\n", b)
+	fmt.Printf("O primeiro ano é %v\n", c)
+	fmt.Printf("O primeiro ano é %v\n", d)
+	fmt.Printf("O primeiro ano é %v\n", e)
+}

@@ -1,0 +1,20 @@
+/*
+- Crie uma variável de tipo string utilizando uma raw string literal.
+- Demonstre-a.
+*/
+
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	x := `Isso 
+		é
+			uma coisa
+	Muito
+			Doido
+				(raw string literal)`
+	fmt.Printf("Demostrando a variável X que é uma raw string literal na tela: \n%v\n\n", x)
+}
