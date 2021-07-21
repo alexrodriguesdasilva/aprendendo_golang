@@ -1,0 +1,38 @@
+/*
+- Crie um programa que:
+    - Atribua um valor int a uma variável
+    - Demonstre este valor em decimal, binário e hexadecimal
+    - Desloque os bits dessa variável 1 para a esquerda, e atribua o resultado a outra variável
+    - Demonstre esta outra variável em decimal, binário e hexadecimal
+    - Desloque os bits da variável inicial 1 para a direita, e atribua o resultado a outra variável
+    - Demonstre esta outra variável em decimal, binário e hexadecimal
+*/
+
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	x := 200
+	fmt.Printf("O valor da variável X em decimal é:\n%d\n\n", x)
+
+	fmt.Printf("O valor da variável X em binário é:\n%b\n\n", x)
+
+	fmt.Printf("O valor da variável X em hexadecimal é:\n%#x\n\n", x)
+
+	y := x << 1
+	fmt.Printf("O valor da variável y em decimal é:\n%d\n\n", y)
+
+	fmt.Printf("O valor da variável y em binário é:\n%b\n\n", y)
+
+	fmt.Printf("O valor da variável y em hexadecimal é:\n%#x\n\n", y)
+
+	z := x >> 1
+	fmt.Printf("O valor da variável Z em decimal é:\n%d\n\n", z)
+
+	fmt.Printf("O valor da variável Z em binário é:\n%b\n\n", z)
+
+	fmt.Printf("O valor da variável Z em hexadecimal é:\n%#x\n\n", z)
+}
