@@ -11,6 +11,7 @@ import (
 
 func main() {
 	for x := 33; x <= 122; x++ {
-		fmt.Printf("\nO número %d em string é %q", x, x)
+		s := fmt.Sprintf("%v", x)
+		fmt.Printf("\nO número %d em SCII: %q\tType:%T\n", x, x, s)
 	}
 }
